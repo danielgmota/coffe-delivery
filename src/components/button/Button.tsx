@@ -1,15 +1,22 @@
-import { ButtonComponent } from "./Button.styles";
-import { ButtonVariant } from "./Button.types";
+import { ButtonIcon, ButtonPrimary, ButtonSecoundary } from "./Button.styles";
+import { TButtonVariant } from "./Button.types";
 
 interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: ButtonVariant;
+  variant: TButtonVariant;
 }
 
 export function Button(props: IButtonProps) {
   const { variant, children, ...rest } = props;
+
   return (
-    <ButtonComponent variant={variant ?? "primary"} {...rest}>
-      {children}
-    </ButtonComponent>
+    <>
+      {variant === "primary" ? (
+        <ButtonPrimary {...rest}>{children}</ButtonPrimary>
+      ) : variant === "secondary" ? (
+        <ButtonSecoundary {...rest}>{children}</ButtonSecoundary>
+      ) : variant === "icon" ? (
+        <ButtonIcon {...rest}>{children}</ButtonIcon>
+      ) : null}
+    </>
   );
 }

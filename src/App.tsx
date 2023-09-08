@@ -1,14 +1,15 @@
-import { Trash } from "phosphor-react";
-import { Button } from "./components/button";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "./styles/global";
+import { defaultTheme } from "./styles/themes/default";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <h1>hello world</h1>
-      <Button>
-        <Trash /> Teste
-      </Button>
-    </>
+    <ThemeProvider theme={defaultTheme}>
+      <Home />
+
+      <GlobalStyle />
+    </ThemeProvider>
   );
 }
 
