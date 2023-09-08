@@ -27,6 +27,10 @@ export const SelectItem = styled.div`
     color: ${(props) => props.theme["purple"]};
   }
 
+  &:hover {
+    background-color: ${(props) => props.theme["base-hover"]};
+  }
+
   &.active {
     border: 1px solid ${(props) => props.theme["purple"]};
     background-color: ${(props) => props.theme["purple-light"]};
