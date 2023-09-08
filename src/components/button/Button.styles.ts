@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const ButtonComponent = styled.button`
+  cursor: pointer;
   border: 0;
   border-radius: 0.375rem;
   text-transform: uppercase;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
