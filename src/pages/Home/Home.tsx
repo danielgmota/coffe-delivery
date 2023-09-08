@@ -1,5 +1,6 @@
 import { ShoppingCartSimple, Trash } from "phosphor-react";
 import { Button } from "../../components/button";
+import { Cart } from "../../components/cart";
 
 export function Home() {
   return (
@@ -14,6 +15,7 @@ export function Home() {
       <Button variant="icon">
         <ShoppingCartSimple />
       </Button>
+      <Cart count={3} />
     </>
   );
 }
