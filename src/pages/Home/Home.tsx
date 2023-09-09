@@ -9,6 +9,7 @@ import { Button } from "../../components/button";
 import { Cart } from "../../components/cart";
 import { Select } from "../../components/select/Select";
 import { Input } from "../../components/input";
+import { InputNumber } from "../../components/input-number";
 
 export function Home() {
   return (
@@ -45,6 +46,7 @@ export function Home() {
       />
       <Input placeholder="Street" required />
       <Input placeholder="Complement" optional />
+      <InputNumber />
     </>
   );
 }
