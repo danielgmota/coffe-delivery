@@ -10,6 +10,7 @@ import { Cart } from "../../components/cart";
 import { Select } from "../../components/select/Select";
 import { Input } from "../../components/input";
 import { InputNumber } from "../../components/input-number";
+import { Catalog } from "../../components/catalog";
 
 export function Home() {
   return (
@@ -47,6 +48,14 @@ export function Home() {
       <Input placeholder="Street" required />
       <Input placeholder="Complement" optional />
       <InputNumber />
+
+      <Catalog
+        title="Expresso tradicional"
+        description="O tradicional café feito com água quente e grãos moídos"
+        tags={["Expresso"]}
+        price="3,00"
+        coffeType="americano"
+      />
     </>
   );
 }
