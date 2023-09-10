@@ -11,6 +11,7 @@ import { Select } from "../../components/select/Select";
 import { Input } from "../../components/input";
 import { InputNumber } from "../../components/input-number";
 import { Catalog } from "../../components/catalog";
+import { CartItem } from "../../components/cart-item";
 
 export function Home() {
   return (
@@ -55,6 +56,13 @@ export function Home() {
         tags={["Expresso"]}
         price="3,00"
         coffeType="americano"
+      />
+      <br />
+      <br />
+      <CartItem
+        title={"Expresso tradicional"}
+        price={"3,00"}
+        coffeType="tradicional"
       />
     </>
   );
