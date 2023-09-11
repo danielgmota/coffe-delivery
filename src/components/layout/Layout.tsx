@@ -1,14 +1,18 @@
 import { Header } from "../header";
-import { Main } from "./Layout.styles";
+import { Article, Main } from "./Layout.styles";
 interface ILayoutProps {
   children: React.ReactNode;
+  outside?: React.ReactNode;
 }
 
 export function Layout(props: ILayoutProps) {
   return (
     <>
       <Header />
-      <Main>{props.children}</Main>
+      <Main>
+        {props.outside}
+        <Article>{props.children}</Article>
+      </Main>
     </>
   );
 }

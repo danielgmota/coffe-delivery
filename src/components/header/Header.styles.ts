@@ -9,7 +9,6 @@ export const HeaderComponent = styled.header`
   padding: 2rem 10rem;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 99;
 
   > div {
