@@ -1,9 +1,21 @@
 import styled from "styled-components";
 
+export const CatalogContainer = styled.div`
+  margin-top: 2.5rem;
+
+  > div {
+    width: 16rem;
+  }
+`;
+
 export const CatalogImage = styled.div`
   position: relative;
   top: -60px;
   margin-bottom: -50px;
+
+  img {
+    width: 120px;
+  }
 `;
 
 export const CatalogTags = styled.div`
@@ -16,7 +28,7 @@ export const CatalogTags = styled.div`
     color: ${(props) => props.theme["yellow-dark"]};
     background-color: ${(props) => props.theme["yellow-light"]};
     padding: 4px 8px;
-    border-radius: 50%;
+    border-radius: 100px;
     font-size: 0.625rem;
   }
 `;

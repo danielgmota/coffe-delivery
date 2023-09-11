@@ -3,6 +3,7 @@ import { Button } from "../button";
 import { Card } from "../card";
 import { InputNumber } from "../input-number";
 import {
+  CatalogContainer,
   CatalogDesc,
   CatalogFooter,
   CatalogImage,
@@ -28,20 +29,24 @@ export function Catalog({
   coffeType,
 }: ICatalogProps) {
   return (
-    <Card>
-      <CatalogImage>{getCoffeTypeImage(coffeType)}</CatalogImage>
-      <CatalogTags>{tags ? tags.map((tag) => <b>{tag}</b>) : null}</CatalogTags>
-      <CatalogTitle>{title}</CatalogTitle>
-      <CatalogDesc>{description}</CatalogDesc>
-      <CatalogFooter>
-        <CatalogPrice>
-          R$ <span>{price}</span>
-        </CatalogPrice>
-        <InputNumber />
-        <Button variant="icon">
-          <ShoppingCartSimple />
-        </Button>
-      </CatalogFooter>
-    </Card>
+    <CatalogContainer>
+      <Card>
+        <CatalogImage>{getCoffeTypeImage(coffeType)}</CatalogImage>
+        <CatalogTags>
+          {tags ? tags.map((tag) => <b>{tag}</b>) : null}
+        </CatalogTags>
+        <CatalogTitle>{title}</CatalogTitle>
+        <CatalogDesc>{description}</CatalogDesc>
+        <CatalogFooter>
+          <CatalogPrice>
+            R$ <span>{price}</span>
+          </CatalogPrice>
+          <InputNumber />
+          <Button variant="icon">
+            <ShoppingCartSimple />
+          </Button>
+        </CatalogFooter>
+      </Card>
+    </CatalogContainer>
   );
 }
