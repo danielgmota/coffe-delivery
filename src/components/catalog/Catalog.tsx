@@ -13,6 +13,7 @@ import {
 } from "./Catalog.styles";
 import { getCoffeTypeImage } from "../../utils/coffe-type";
 import { ICatalogProps } from "./Catalog.types";
+import { useNavigate } from "react-router-dom";
 
 export function Catalog({
   title,
@@ -21,6 +22,7 @@ export function Catalog({
   tags,
   coffeType,
 }: ICatalogProps) {
+  const navigate = useNavigate();
   return (
     <CatalogContainer>
       <Card>
@@ -35,7 +37,7 @@ export function Catalog({
             R$ <span>{price}</span>
           </CatalogPrice>
           <InputNumber />
-          <Button variant="icon">
+          <Button variant="icon" onClick={() => navigate("/checkout")}>
             <ShoppingCartSimple />
           </Button>
         </CatalogFooter>
