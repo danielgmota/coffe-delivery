@@ -1,1 +1,1 @@
-export * from "./input-number";
+export * from "./Input-number";
