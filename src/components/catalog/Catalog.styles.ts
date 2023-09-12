@@ -2,10 +2,6 @@ import styled from "styled-components";
 
 export const CatalogContainer = styled.div`
   margin-top: 2.5rem;
-
-  > div {
-    width: 16rem;
-  }
 `;
 
 export const CatalogImage = styled.div`
@@ -22,6 +18,7 @@ export const CatalogTags = styled.div`
   display: flex;
   flex-direction: row;
   gap: 0.25rem;
+  margin-top: 0.75rem;
 
   b {
     text-transform: uppercase;
@@ -39,6 +36,7 @@ export const CatalogTitle = styled.div`
   font-style: normal;
   font-weight: 700;
   color: ${(props) => props.theme["base-subtitle"]};
+  margin-top: 1rem;
 `;
 
 export const CatalogDesc = styled.div`
@@ -46,7 +44,9 @@ export const CatalogDesc = styled.div`
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
+  text-align: center;
   color: ${(props) => props.theme["base-label"]};
+  margin-top: 0.5rem;
 `;
 
 export const CatalogFooter = styled.div`
@@ -54,6 +54,7 @@ export const CatalogFooter = styled.div`
   flex-direction: row;
   justify-content: space-between;
   gap: 0.5rem;
+  margin-top: 2rem;
 `;
 
 export const CatalogPrice = styled.div`

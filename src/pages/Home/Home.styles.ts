@@ -7,7 +7,9 @@ export const HomeTitle = styled.h3`
 `;
 
 export const Catalogs = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2.5rem;
 `;
