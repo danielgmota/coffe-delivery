@@ -11,15 +11,8 @@ import {
   CatalogTags,
   CatalogTitle,
 } from "./Catalog.styles";
-import { getCoffeTypeImage, ICoffeType } from "../../utils/coffe-type";
-
-interface ICatalogProps {
-  title: string;
-  description: string;
-  price: string;
-  tags: string[];
-  coffeType: ICoffeType;
-}
+import { getCoffeTypeImage } from "../../utils/coffe-type";
+import { ICatalogProps } from "./Catalog.types";
 
 export function Catalog({
   title,
