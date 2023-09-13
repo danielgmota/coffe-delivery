@@ -1,26 +1,27 @@
 import styled from "styled-components";
 
 export const InputContainer = styled.div`
-  width: fit-content;
+  width: 100%;
   display: box;
   position: relative;
 
   span {
-    position: relative;
-    top: 0;
-    left: -60px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
     color: ${(props) => props.theme["base-label"]};
     font-size: 12px;
   }
 `;
 
 export const InputComponent = styled.input`
+  width: 100%;
+  font-size: 14px;
+  color: ${(props) => props.theme["base-text"]};
   padding: 0.75rem;
   background-color: ${(props) => props.theme["base-input"]};
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  font-size: 14px;
-  color: ${(props) => props.theme["base-text"]};
 
   &::placeholder {
     color: ${(props) => props.theme["base-label"]};
