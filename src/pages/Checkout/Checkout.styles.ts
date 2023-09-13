@@ -10,7 +10,6 @@ export const CheckoutContainer = styled.div`
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
   }
 
   > div:last-child {
@@ -30,6 +29,7 @@ export const CheckoutCard = styled.div`
   gap: 2rem;
   background-color: ${(props) => props.theme["base-card"]};
   padding: 2.5rem;
+  margin-bottom: 0.75rem;
 
   form > div {
     display: grid;

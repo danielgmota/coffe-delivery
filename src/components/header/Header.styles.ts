@@ -20,6 +20,7 @@ export const HeaderComponent = styled.header`
 export const LocationHeader = styled.div`
   display: flex;
   align-items: center;
+  height: 2.375rem;
   padding: 0.5rem;
   background-color: ${(props) => props.theme["purple-light"]};
   color: ${(props) => props.theme["purple-dark"]};
