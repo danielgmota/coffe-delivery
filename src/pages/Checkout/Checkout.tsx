@@ -17,8 +17,11 @@ import { CartItem } from "../../components/cart-item";
 import { Input } from "../../components/input";
 import { Select } from "../../components/select/Select";
 import { Button } from "../../components/button";
+import { useNavigate } from "react-router-dom";
 
 export function Checkout() {
+  const navigate = useNavigate();
+
   return (
     <Layout>
       <CheckoutContainer>
@@ -117,7 +120,9 @@ export function Checkout() {
                   <b>R$ 30</b>
                 </div>
               </div>
-              <Button variant="primary">CONFIRMAR PEDIDO</Button>
+              <Button variant="primary" onClick={() => navigate("/confirmed")}>
+                CONFIRMAR PEDIDO
+              </Button>
             </CheckoutItems>
           </Card>
         </div>

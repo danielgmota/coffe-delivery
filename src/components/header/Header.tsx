@@ -16,7 +16,7 @@ export function Header() {
             <MapPin />
             Rio de Janeiro, RJ
           </LocationHeader>
-          <Link to="/">
+          <Link to="/checkout">
             <Cart />
           </Link>
         </div>
